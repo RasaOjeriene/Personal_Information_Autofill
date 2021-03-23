@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Information Autofill</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Contact Form">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="Rasa Ojeriene">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js"></script>
+    </head>
+ 
+    <body>
+        <h1>Please fill out contact form below and you will receive SESSION GUIDE to your mailbox in one hour.</h1>
+        <form id="contact-form" onsubmit="return validation()">
+            <div id="error_message"></div>
+            <fieldset>
+                <legend>Personal information</legend>
+                <div>
+                    <label for="fullname">Full Name:
+                        <input type="text" autocomplete="shipping given-name" id="name">
+                        <span>*</span>
+                    </label>
+                    <label for="email">Email:
+                        <input type="email" id="email">
+                    </label>
+                    <label for="phone">Phone:
+                        <input type="phone" id="phone">
+                        <span>*</span>
+                    </label>
+                    <label for="address">Address:
+                        <input type="text" autocomplete="shipping address-line1" id="address">
+                    </label>
+                    <label for="cityname">City:
+                        <input type="text" autocomplete="shipping address-line2" id="city">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Detailed information</legend>
+                <label for="jobType-30">Type of services:
+                <select name="Type of services" id="type">
+                    <option value="wedding">Wedding | Couple Photography</option>
+                    <option value="engagement">Engagement | Couple Photography</option>
+                    <option value="maternity">Maternity | Family Photography</option>
+                    <option value="newborn">Newborn | Baby & Family Photography</option>
+                    <option value="christening">Christening | Kids Photography</option>
+                    <option value="other">Other</option>
+                </select>
+                <span>*</span>
+                </label>
+                <label for="address">Approximate date:
+                    <input type="date" id="date">
+                    <span>*</span>
+                </label>
+                <div>
+                    <label for=""> Tell me more about your enquiry (gender and age of your children;  your Due Date if you are expecting a baby or any other information that would be helpful)  </label>
+                </div>
+                <textarea class="autosize"></textarea>
+                <span>*</span>
+            </fieldset>
+            <div class="btn">
+                <button id="btnsubmit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

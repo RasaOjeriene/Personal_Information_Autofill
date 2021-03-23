@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body {
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+h1 {
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+span {
+    color: red;
+}
+fieldset {
+    margin: 20px;
+    padding: 5px;
+}
+label {
+    display: flex;
+    margin: 25px;
+}
+select {
+    margin-left: 20px;
+}
+input {
+    margin-left: 25px;
+}
+.autosize {
+    margin-left: 25px;
+}
+#error_message{
+    margin: 5px;
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+#btnsubmit {
+    width: 8em;
+    margin-left: 25px;
+    padding: 5px;
+    text-transform: uppercase;
+    color: rgb;
+    cursor: pointer;
+    background: rgba(160, 39, 39, 0.733);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#btnsubmit:hover {
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
